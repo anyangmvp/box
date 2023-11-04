@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVBox接口收集站</title>
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/js/bootstrap.min.js"></script>
+
+  <style>
+    iframe {
+      background-color: rgb(232, 240, 247);
+    }
+
+    #alert {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">TVBox接口收集站</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">首页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class="nav-link" href="https://www.lige.fit/tvbox">TVBox接口列表</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class="nav-link" href="https://www.lige.fit/ua">TVBox接口解密</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class="nav-link"
+            href="https://catvodtvofficial.github.io/CatVodTVJsonEditor/">TVBox接口编辑</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+  <div id="alert" class="alert alert-success" style="display: none;" role="alert">
+    线路已复制到剪贴板<br>
+    <span id="respository"></span>
+  </div>
+  <div class="container mt-3">
+    <a class="btn btn-primary" data="/set" onClick="urlToClipboard(this)">多仓线路</A>
+    <a class="btn btn-success" data="/list" onClick="urlToClipboard(this)">单仓线路</A>
+    <a class="btn btn-warning" data="/hd1" onClick="urlToClipboard(this)">高清主线</A>
+    <a class="btn btn-warning" data="/hd2" onClick="urlToClipboard(this)">高清备线</A>
+    <br>
+    <br>
+    <a class="btn btn-danger" data="/live/tv1" onClick="urlToClipboard(this)">1号直播线路</A>
+    <a class="btn btn-danger" data="/live/tv2" onClick="urlToClipboard(this)">2号直播线路</A>
+    <a class="btn btn-danger" data="/live/tv3" onClick="urlToClipboard(this)">3号直播线路</A>
+    <hr>
+  </div>
+  <div class="container mt-2" id="apkList">
+    <a type="button" class="btn btn-default btn-sm p-2 bg-secondary text-white"
+      href="https://wwot.lanzouw.com/b052mukuf?code=0000" target="_blank" download>TVBox网盘下载 [访问密码:0000]</a>
+  </div>
+
+  <hr>
+  <iframe src="https://www.lige.fit/tvbox" width="100%" height="1080px"></iframe>
+</body>
+<script>
+  $(document).ready(function () {
+    $.ajax({
+      url: '/listapks',
+      type: 'GET',
+      success: function (data) {
+        var apkList = $('#apkList');
+        //apkList.empty();
+        data.forEach(function (apk) {
+          apkList.append('<a type="button" class="btn btn-default btn-sm p-2 bg-secondary text-white" href="' + apk.url + '" download>【' + apk.name + '】</a> ');
+        });
+      },
+      error: function () {
+        //alert('获取APK列表失败');
+      }
+    });
+  });
+
+  function urlToClipboard(obj) {
+    let path = $(obj).attr("data");
+    let rooturl = window.location.origin;
+    let respositoryUrl = rooturl + path;
+    $('#respository').html(respositoryUrl);
+    navigator.clipboard.writeText(respositoryUrl);
+    $("#alert").fadeIn(1000);
+    setTimeout(function () {
+      $("#alert").fadeOut(2500);
+    }, 1500);
+  }
+
+</script>
+
+</html>

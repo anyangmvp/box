@@ -1,0 +1,12 @@
+{
+    "storeHouse": [
+        {
+            "sourceName": "🛸精选仓库",
+            "sourceUrl": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/list.json"
+        },
+        {
+            "sourceName": "🛸欧歌仓库",
+            "sourceUrl": "http://tv.nxog.top/nxog/ou1.php?url=http://tv.nxog.top&b=欧歌"
+        }
+    ]
+}
