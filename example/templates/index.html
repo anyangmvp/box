@@ -76,22 +76,22 @@
   <iframe src="https://www.lige.fit/tvbox" width="100%" height="1080px"></iframe>
 </body>
 <script>
-  $(document).ready(function () {
-    $.ajax({
-      url: '/listapks',
-      type: 'GET',
-      success: function (data) {
-        var apkList = $('#apkList');
-        //apkList.empty();
-        data.forEach(function (apk) {
-          apkList.append('<a type="button" class="btn btn-default btn-sm p-2 bg-secondary text-white" href="' + apk.url + '" download>【' + apk.name + '】</a> ');
-        });
-      },
-      error: function () {
-        //alert('获取APK列表失败');
-      }
-    });
-  });
+  // $(document).ready(function () {
+  //   $.ajax({
+  //     url: '/listapks',
+  //     type: 'GET',
+  //     success: function (data) {
+  //       var apkList = $('#apkList');
+  //       //apkList.empty();
+  //       data.forEach(function (apk) {
+  //         apkList.append('<a type="button" class="btn btn-default btn-sm p-2 bg-secondary text-white" href="' + apk.url + '" download>【' + apk.name + '】</a> ');
+  //       });
+  //     },
+  //     error: function () {
+  //       //alert('获取APK列表失败');
+  //     }
+  //   });
+  // });
 
   function urlToClipboard(obj) {
     let path = $(obj).attr("data");
