@@ -7,7 +7,7 @@ from  . import views
 urlpatterns = [
     path('', views.index),
     path('listapks/', views.listapks, name='listapks'),
-    path('福利/', views.fuli, name='fuli'),
+    path('18/', views.fuli, name='fuli'),
     path('<str:goto>/', views.goto_repos, name='goto'),
 ]
 
