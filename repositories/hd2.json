@@ -311,6 +311,16 @@
             "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/云盘论坛.json"
         },
         {
+            "key": "云盘资源",
+            "name": "📀资源",
+            "type": 3,
+            "api": "csp_XYQHikerAL",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/云盘资源.json"
+        },
+        {
             "key": "云盘资源分享",
             "name": "📀分享",
             "type": 3,
