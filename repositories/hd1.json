@@ -60,7 +60,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "FbjDcUxPqpfNr0QF4QvE6sExbcpBF4MRDm4TvbCzxUxQS9bPrS+dwlqC+K21Byi2fnbN32ExknwkTyVnT4ZkO1NUAJnYhg/LOWYSnzESguc1X7n/JQ1wPh7lInAdzJ2qxzb2fKg8RZczmhg8lF/+BAMaZaqxv0MMB5dPInMBPwir"
+            "ext": "FbjPcVZY48PN/RIZ5UWFrsgzZIYQQdkQD24ZqLG4x0BQRMqZ/naRzE3Wr//0G3O5b3qZ52k6mnolCwR8RphAeSIOJpbFm1y/c0U5jCoKjLdmWaD9fWAhDDfhZXgos8WxwC6MOtZ3UKcPijkmiHTnX1xJQ+K8qx42Y/UgK30UPy299f9v19QvE9Y0Rc9zf1hbaxFoiTMPUz29r18V4SYUreB+tPz+oBocIDYMwbcxYV88pp2F2Ce4duCd9ByaldOBQonUFSYQFLWQbEY16eFVZHrR/+Tx6cXUvvph+YFcF3soDv4r7kL18ZuPWh6xEjUFJV1YeFoDrWW5i+dRvsfxm33epympDpsa1o/lgQyPoTLVzegF1w+FlXpH+Hm75ocGor/lotEUoaS4iTtA0XGPcbOHRXAofyjY1r4LnOz9PIpA3d7ze6141sJty0bA9NTwfbIPbZ3auEvnlyX2XQ1pO+JKAnYPHM1mS7nDnorJy9Z6JO/Lc2Uiaps09sg54yQSlIGTOG1sJevQN7FeQxtaLwYnkzJNgRP1T6OmFtR9osmzB0+lOSEeRHxN6PPNUz0l3wJ72MHeuGzKWyPOfjsCqH07tdKPiCj418ma7SxkGFJdq6gFmqdzgckU/LDiDDjZG+DBaL6F1gDQJ999OAB/YAIXD5h82ZHUzG6hURmu48Tp34VHWdtponBFRrUV51N5XFXM48zI2Kj2DaI/evIZ3uap4M6eS4Rx+hsVDxUbUTzDo4LQ9njQISCnzMtQecFA+BqtjibK2Dc06by8WzWJ4VHSooaoID39D5sFW/VUt9fbY+OTsbnlIJh7UME="
         },
         {
             "key": "csp_XYQHiker_农民影视",
@@ -132,16 +132,6 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1
-        },
-        {
-            "key": "js_4KHDR",
-            "name": "👩‍⚕️玩偶姐姐",
-            "type": 3,
-            "api": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/js/drpy2.min.js",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/rep/4KHDR.js"
         },
         {
             "key": "js_骚火电影",
@@ -538,16 +528,6 @@
             "filterable": 1
         },
         {
-            "key": "csp_XYQHiker4klg",
-            "name": "💅🏻原盘4k",
-            "type": 3,
-            "api": "csp_XYQHiker",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/rep/中国蓝光网.json"
-        },
-        {
             "key": "腾讯",
             "name": "🐧腾讯视频",
             "type": 3,
@@ -574,6 +554,26 @@
             "type": 3,
             "api": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/js/drpy2.min.js",
             "ext": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/rep/芒果视频.js"
+        },
+        {
+            "key": "csp_XYQHiker4klg",
+            "name": "💅🏻原盘4k",
+            "type": 3,
+            "api": "csp_XYQHiker",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 1,
+            "ext": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/rep/中国蓝光网.json"
+        },
+        {
+            "key": "js_4KHDR",
+            "name": "👩‍⚕️玩偶姐姐",
+            "type": 3,
+            "api": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/js/drpy2.min.js",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 1,
+            "ext": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/rep/4KHDR.js"
         }
     ],
     "parses": [
