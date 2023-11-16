@@ -73,16 +73,6 @@
             "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/农民影视.json"
         },
         {
-            "key": "追忆",
-            "name": "🧑‍🚀追忆影视",
-            "type": 3,
-            "api": "csp_AppSK",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "FbjPcVZY48PN/RIZ5UWFrphwLIZAH4tPWnVF46Ct0RcDCdqQ/iHaxETP6KexDCalbnKb235g2zI+TmNzCM49OFRCWdee3hnULz5M1CsK3w=="
-        },
-        {
             "key": "csp_WoGG",
             "name": "👽玩偶哥哥",
             "type": 3,
