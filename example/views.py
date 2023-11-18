@@ -8,7 +8,7 @@ import re
 import tempfile
 from urllib.parse import urlparse, urlunparse
 from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse, JsonResponse, StreamingHttpResponse
 from django.conf import settings 
 from django.views.decorators.http import require_http_methods
 from django.http import HttpResponseRedirect
@@ -59,6 +59,7 @@ def fuli(request):
 #Live Proxy
 class Cache:
     def __init__(self, cache_time=3600, cache_dir=tempfile.gettempdir()):
+        print(cache_dir)
         self.cache_time = cache_time
         self.cache_dir = cache_dir
 
@@ -111,8 +112,27 @@ def curl_get(url):
         "Usertoken": token
     }
     try:
-        response = requests.get(url, headers=header, timeout=10)
+        response = requests.get(url, headers=header, timeout=30,stream=True)
+        headers = response.headers
+        content_type = headers.get('Content-Type', 'video/mp2t')
+        video_response = StreamingHttpResponse(response.iter_content(chunk_size=8192), content_type=content_type)
+        return video_response
+    except requests.exceptions.RequestException as e:
+        return "Error: " + str(e)
+
+def curl_get_text(url):
+    cache = Cache(900)
+    token = cache.get("token")
+    cId = cache.get("client_id")
+    header = {
+        "User-Agent": "okhttp/3.12.5",
+        "Userid": cId,
+        "Usertoken": token
+    }
+    try:
+        response = requests.get(url, headers=header, timeout=30, stream=True)
         response.raise_for_status()
+        print('\n',response.text,'\n')
         return response.text
     except requests.exceptions.RequestException as e:
         return "Error: " + str(e)
@@ -219,7 +239,7 @@ def liveProxy(request):
         parseUrl = "http://"
         parseUrl += request.META['HTTP_HOST']
         parseUrl += request.META['PATH_INFO']
-
+        
         for ct in cate:
             cc += ct + ",#genre#\n"
             for v in rCode['data']:
@@ -233,10 +253,7 @@ def liveProxy(request):
         url = urlparse(global_api)
         real = url.scheme + "://" + url.hostname + ts
         data = curl_get(real)
-        response = HttpResponse(content=data, content_type='video/mp2t')
-        response['Content-Disposition'] = 'attachment; filename="video.ts"'
-        response['Cache-Control'] = 'no-cache'
-        return response
+        return data
     elif m3u8:
         if 'youtube' in m3u8:
             data = curl_get(m3u8)
@@ -246,7 +263,7 @@ def liveProxy(request):
             parseUrl += request.META['HTTP_HOST'] + request.META['PATH_INFO']
             url = urlparse(global_api)
             real = url.scheme + "://" + url.hostname + m3u8
-            data = curl_get(real)
+            data = curl_get_text(real)
             if not data:
                 return
             parsed_url = urlparse(real)
@@ -255,6 +272,7 @@ def liveProxy(request):
             path = urlparse(newurl).path
             replacement = parseUrl + "?ts=" + path + '/\\1'
             datac = re.sub(r'(.+\.ts)', replacement, data)
+            print(datac)
             response = HttpResponse(content=datac, content_type='application/vnd.apple.mpegurl')
             response['Content-Disposition'] = 'attachment; filename="playlist.m3u8"'
             response['Cache-Control'] = 'no-cache'
