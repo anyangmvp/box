@@ -252,7 +252,10 @@ def liveProxy(request):
             path = urlparse(newurl).path
             replacement = parseUrl + "?ts=" + path + '/\\1'
             datac = re.sub(r'(.+\.ts)', replacement, data)
-            return HttpResponse(datac)
+            response = HttpResponse(content=datac, content_type='application/vnd.apple.mpegurl')
+            response['Content-Disposition'] = 'attachment; filename="playlist.m3u8"'
+            response['Cache-Control'] = 'no-cache'
+            return response
     else:
         return HttpResponse(pz)
     
