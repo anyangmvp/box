@@ -5,6 +5,7 @@ import requests
 import json
 import time
 import re
+import tempfile
 from urllib.parse import urlparse, urlunparse
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
@@ -57,7 +58,7 @@ def fuli(request):
 
 #Live Proxy
 class Cache:
-    def __init__(self, cache_time=3600, cache_dir="cache/"):
+    def __init__(self, cache_time=3600, cache_dir=tempfile.gettempdir()):
         self.cache_time = cache_time
         self.cache_dir = cache_dir
 
