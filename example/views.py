@@ -233,7 +233,10 @@ def liveProxy(request):
         url = urlparse(global_api)
         real = url.scheme + "://" + url.hostname + ts
         data = curl_get(real)
-        return HttpResponse(data)
+        response = HttpResponse(content=data, content_type='application/vnd.apple.mpegurl')
+        response['Content-Disposition'] = 'attachment; filename="playlist.m3u8"'
+        response['Cache-Control'] = 'no-cache'
+        return response
     elif m3u8:
         if 'youtube' in m3u8:
             data = curl_get(m3u8)
