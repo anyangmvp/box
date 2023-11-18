@@ -8,6 +8,7 @@ urlpatterns = [
     path('', views.index),
     path('listapks/', views.listapks, name='listapks'),
     path('18/', views.fuli, name='fuli'),
+    path('liveproxy/', views.liveProxy, name='liveProxy'),
     path('<str:goto>/', views.goto_repos, name='goto'),
 ]
 
