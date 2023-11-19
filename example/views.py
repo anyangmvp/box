@@ -59,7 +59,7 @@ def fuli(request):
 #Live Proxy
 class Cache:
     def __init__(self, cache_time=3600, cache_dir=tempfile.gettempdir()):
-        print(cache_dir)
+        # print(cache_dir)
         self.cache_time = cache_time
         self.cache_dir = cache_dir
 
