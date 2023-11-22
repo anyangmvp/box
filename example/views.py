@@ -1,17 +1,18 @@
 # example/views.py
 import hashlib
-import os
-import requests
 import json
-import time
+import os
 import re
 import tempfile
+import time
 from urllib.parse import urlparse, urlunparse
-from django.shortcuts import render
+
+import requests
+from django.conf import settings
 from django.http import HttpResponse, JsonResponse, StreamingHttpResponse
-from django.conf import settings 
-from django.views.decorators.http import require_http_methods
 from django.http import HttpResponseRedirect
+from django.shortcuts import render
+from django.views.decorators.http import require_http_methods
 
 APPS_FOLDER = os.path.join(settings.BASE_DIR, 'applications')
 # REPOS_BASE_URL = 'https://jihulab.com/anyangmvp/box/-/raw/main/'
@@ -21,11 +22,12 @@ REPOS_BASE_URL = 'https://raw.githubusercontent.com/anyangmvp/box/main/'
 def index(request):
     return render(request, 'index.html')
 
+
 @require_http_methods(["GET"])
 def listapks(request):
     files = os.listdir(APPS_FOLDER)
     apk_files = [
-        {"name": file, "url": f"/applications/{file}"} 
+        {"name": file, "url": f"/applications/{file}"}
         for file in files if file.endswith(".apk")
     ]
     return JsonResponse(apk_files, safe=False)
@@ -43,7 +45,7 @@ def goto_repos(request, goto):
             return HttpResponse("获取配置信息失败，请重试！", status=500)
     else:
         return HttpResponseRedirect('/')
-    
+
 
 @require_http_methods(["GET"])
 def fuli(request):
@@ -56,7 +58,7 @@ def fuli(request):
     return HttpResponse(html)
 
 
-#Live Proxy
+# Live Proxy
 class Cache:
     def __init__(self, cache_time=3600, cache_dir=tempfile.gettempdir()):
         # print(cache_dir)
@@ -76,20 +78,22 @@ class Cache:
     def get(self, key):
         cache_path = self.get_cache_path(key)
         if self.is_cache_valid(cache_path):
-            with open(cache_path, "r",encoding='utf-8') as file:
+            with open(cache_path, "r", encoding='utf-8') as file:
                 return file.read()
         return None
 
     def put(self, key, value):
         cache_path = self.get_cache_path(key)
-        with open(cache_path, "w",encoding='utf-8') as file:
+        with open(cache_path, "w", encoding='utf-8') as file:
             file.write(value)
+
 
 def randomString(length):
     import random
     import string
     characters = string.ascii_lowercase + string.digits
     return ''.join(random.choice(characters) for _ in range(length))
+
 
 global_api = os.getenv("LIVE_API_URL")
 global_key = os.getenv("LIVE_API_KEY")
@@ -102,6 +106,7 @@ global_vparams = {}
 global_vSys = {}
 global_vArr = {}
 
+
 def curl_get(url):
     cache = Cache(900)
     token = cache.get("token")
@@ -112,13 +117,14 @@ def curl_get(url):
         "Usertoken": token
     }
     try:
-        response = requests.get(url, headers=header, timeout=30,stream=True)
+        response = requests.get(url, headers=header, timeout=30, stream=True)
         headers = response.headers
         content_type = headers.get('Content-Type', 'video/mp2t')
         video_response = StreamingHttpResponse(response.iter_content(chunk_size=8192), content_type=content_type)
         return video_response
     except requests.exceptions.RequestException as e:
         return "Error: " + str(e)
+
 
 def curl_get_text(url):
     cache = Cache(900)
@@ -132,24 +138,27 @@ def curl_get_text(url):
     try:
         response = requests.get(url, headers=header, timeout=30, stream=True)
         response.raise_for_status()
-        print('\n',response.text,'\n')
+        print('\n', response.text, '\n')
         return response.text
     except requests.exceptions.RequestException as e:
         return "Error: " + str(e)
+
 
 def curl_post(url, postdata, header):
     try:
         response = requests.post(url, data=postdata, headers=header, timeout=20)
         response.raise_for_status()
-        print('\n',response.text,'\n')
+        print('\n', response.text, '\n')
         return response.text
     except requests.exceptions.RequestException as e:
         return "Error: " + str(e)
 
+
 def getCode(Method, token, password, client_id):
     # Setting
     timestr = time.time()
-    sign = hashlib.md5((global_from_value + global_key + str(int(timestr)) + Method + global_device_id).encode()).hexdigest()
+    sign = hashlib.md5(
+        (global_from_value + global_key + str(int(timestr)) + Method + global_device_id).encode()).hexdigest()
 
     if token:
         global_vparams["client_id"] = client_id
@@ -171,9 +180,9 @@ def getCode(Method, token, password, client_id):
 
     return json.dumps(global_vArr)
 
+
 def getLive(data):
     import re
-    import urllib.parse
     matches = re.search(r'"hlsManifestUrl":"(.*?)"', data)
     if matches:
         api = matches.group(1)
@@ -196,6 +205,7 @@ def getLive(data):
             pass
     return None
 
+
 @require_http_methods(["GET"])
 def liveProxy(request):
     m3u8 = request.GET.get('url', '')
@@ -208,14 +218,14 @@ def liveProxy(request):
         header = {
             "User-Agent": "okhttp/3.12.5",
         }
-        respbody = curl_post(global_api, getCode("1-1-2",None,None,None), header)
+        respbody = curl_post(global_api, getCode("1-1-2", None, None, None), header)
         respbody = json.loads(respbody)['data']['client']
         print('1 --\n', respbody)
         token = respbody['token']
         password = respbody['password']
         client_id = respbody['client_id']
 
-        respbody = curl_post(global_api, getCode("1-1-3",token,password,client_id), header)
+        respbody = curl_post(global_api, getCode("1-1-3", token, password, client_id), header)
         respbody = json.loads(respbody)['data']['client']
         print('2 --\n', respbody)
         token = respbody['token']
@@ -224,7 +234,7 @@ def liveProxy(request):
         cache.put("password", password)
         cache.put("client_id", client_id)
 
-        respbody = curl_post(global_api, getCode("1-1-4",token,password,client_id), header)
+        respbody = curl_post(global_api, getCode("1-1-4", token, password, client_id), header)
         rCode = json.loads(respbody)
         print('3 --\n', rCode)
         list = ''
@@ -239,7 +249,7 @@ def liveProxy(request):
         parseUrl = "http://"
         parseUrl += request.META['HTTP_HOST']
         parseUrl += request.META['PATH_INFO']
-        
+
         for ct in cate:
             cc += ct + ",#genre#\n"
             for v in rCode['data']:
@@ -279,4 +289,3 @@ def liveProxy(request):
             return response
     else:
         return HttpResponse(pz)
-    

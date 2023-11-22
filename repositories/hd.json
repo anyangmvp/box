@@ -41,7 +41,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://jihulab.com/duomv/xduo/-/raw/main/libs/czspp.js"
+            "ext": "https://jihulab.com/iduoduo/xduo/-/raw/main/libs/czspp.js"
         },
         {
             "key": "三六零",
@@ -90,7 +90,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://jihulab.com/duomv/xduo/-/raw/main/libs/nangua.js"
+            "ext": "https://jihulab.com/iduoduo/xduo/-/raw/main/libs/nangua.js"
         },
         {
             "key": "js_影探",
@@ -100,14 +100,14 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://jihulab.com/duomv/xduo/-/raw/main/libs/侦探.js"
+            "ext": "https://jihulab.com/iduoduo/xduo/-/raw/main/libs/侦探.js"
         },
         {
             "key": "js_荐片",
             "name": "⏳荐片影视",
             "type": 3,
             "api": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://jihulab.com/duomv/xduo/-/raw/main/libs/荐片.js",
+            "ext": "https://jihulab.com/iduoduo/xduo/-/raw/main/libs/荐片.js",
             "playerType": 1,
             "searchable": 1,
             "quickSearch": 1,
@@ -121,7 +121,7 @@
             "quickSearch": 0,
             "filterable": 1,
             "api": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://jihulab.com/duomv/xduo/-/raw/main/libs/saohuo.js"
+            "ext": "https://jihulab.com/iduoduo/xduo/-/raw/main/libs/saohuo.js"
         },
         {
             "key": "csp_XYQHiker_奇趣影视",
@@ -188,7 +188,7 @@
             "api": "csp_KungFu404",
             "searchable": 0,
             "filterable": 0,
-            "jar": "https://jihulab.com/duomv/xduo/-/raw/main/alibaba.jar"
+            "jar": "https://jihulab.com/iduoduo/xduo/-/raw/main/alibaba.jar"
         },
         {
             "key": "云盘搜索",
@@ -553,7 +553,7 @@
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://jihulab.com/duomv/xduo/-/raw/main/libs/4KHDR.js"
+            "ext": "https://jihulab.com/iduoduo/xduo/-/raw/main/libs/4KHDR.js"
         }
     ],
     "parses": [

@@ -2,7 +2,8 @@
 
 # Django + Vercel
 
-This example shows how to use Django 4 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
+This example shows how to use Django 4 on Vercel with Serverless Functions using
+the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
 
 ## Demo
 
@@ -56,7 +57,7 @@ def index(request):
     <html>
         <body>
             <h1>Hello from Vercel!</h1>
-            <p>The current time is { now }.</p>
+            <p>The current time is {now}.</p>
         </body>
     </html>
     '''
@@ -70,7 +71,6 @@ This view is exposed a URL through `example/urls.py`:
 from django.urls import path
 
 from example.views import index
-
 
 urlpatterns = [
     path('', index),
@@ -89,7 +89,8 @@ urlpatterns = [
 ]
 ```
 
-This example uses the Web Server Gateway Interface (WSGI) with Django to enable handling requests on Vercel with Serverless Functions.
+This example uses the Web Server Gateway Interface (WSGI) with Django to enable handling requests on Vercel with
+Serverless Functions.
 
 ## Running Locally
 
