@@ -1,11 +1,11 @@
 {
-    "spider": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/spider.jar;md5;761f41825820b4a64fd46787a03c0dd1",
-    "wallpaper": "https://jianbian.chuqiuyu.tk/",
+    "spider": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/spider.jar;md5;761f41825820b4a64fd46787a03c0dd1",
+    "wallpaper": "https://api.likepoems.com/img/bing",
     "warningText": "💕最美好的祝福送给你，加油！💕",
     "lives": [
         {
             "name": "live1",
-            "url": "https://mirror.ghproxy.com//https://github.com/anyangmvp/box/raw/main/live/tv1",
+            "url": "https://gh.aygogogo.eu.org/anyangmvp/box/main/live/tv1",
             "type": 0,
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
             "logo": "https://epg.112114.xyz/logo/{name}.png",
@@ -37,11 +37,11 @@
             "key": "js_czsapp",
             "name": "🏭️厂长资源",
             "type": 3,
-            "api": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/js/drpy2.min.js",
+            "api": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/js/drpy2.min.js",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/czspp.js"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/czspp.js"
         },
         {
             "key": "三六零",
@@ -60,7 +60,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://mirror.ghproxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/XYQHiker/农民影视.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/农民影视.json"
         },
         {
             "key": "csp_WoGG",
@@ -70,44 +70,44 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/玩偶哥哥.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/玩偶哥哥.json"
         },
         {
             "key": "两个磁力",
             "name": "🐾两个BT",
             "type": 3,
-            "api": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/js/drpy2.min.js",
+            "api": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/js/drpy2.min.js",
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/两个磁力.js"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/两个磁力.js"
         },
         {
             "key": "js_nangua",
             "name": "💤畅梦影视",
             "type": 3,
-            "api": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/js/drpy2.min.js",
+            "api": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/js/drpy2.min.js",
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/nangua.js"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/nangua.js"
         },
         {
             "key": "js_影探",
             "name": "🕵️侦探盒子",
             "type": 3,
-            "api": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/js/drpy2.min.js",
+            "api": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/js/drpy2.min.js",
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/侦探.js"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/侦探.js"
         },
         {
             "key": "js_荐片",
             "name": "⏳荐片影视",
             "type": 3,
-            "api": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/荐片.js",
+            "api": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/js/drpy2.min.js",
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/荐片.js",
             "playerType": 1,
             "searchable": 1,
             "quickSearch": 1,
@@ -120,8 +120,8 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "api": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/saohuo.js"
+            "api": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/js/drpy2.min.js",
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/saohuo.js"
         },
         {
             "key": "csp_XYQHiker_奇趣影视",
@@ -131,7 +131,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/奇趣影视.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/奇趣影视.json"
         },
         {
             "key": "ok",
@@ -169,7 +169,7 @@
             "quickSearch": 0,
             "filterable": 1,
             "playerType": "1",
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/dadagui.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/dadagui.json"
         },
         {
             "key": "csp_Bdys",
@@ -179,7 +179,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "jar": "https://mirror.ghproxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/jar/XYQ.jar"
+            "jar": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/XYQ.jar;md5;3B3265737234FF17FC66539DD99EFC66"
         },
         {
             "key": "csp_KungFu404",
@@ -188,7 +188,7 @@
             "api": "csp_KungFu404",
             "searchable": 0,
             "filterable": 0,
-            "jar": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/alibaba.jar;md5;332D0E5A28640EE88589390AD4A23A39"
+            "jar": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/alibaba.jar;md5;332D0E5A28640EE88589390AD4A23A39"
         },
         {
             "key": "云盘搜索",
@@ -198,7 +198,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/云盘搜索.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/云盘搜索.json"
         },
         {
             "key": "DOVX搜索",
@@ -208,7 +208,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/DOVX搜索.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/DOVX搜索.json"
         },
         {
             "key": "UpYun",
@@ -248,7 +248,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/橘子盘搜.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/橘子盘搜.json"
         },
         {
             "key": "我的小站",
@@ -258,7 +258,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/我的小站.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/我的小站.json"
         },
         {
             "key": "阿里苏苏",
@@ -268,7 +268,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/阿里苏苏.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/阿里苏苏.json"
         },
         {
             "key": "云盘论坛",
@@ -278,7 +278,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/云盘论坛.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/云盘论坛.json"
         },
         {
             "key": "云盘资源",
@@ -288,7 +288,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/云盘资源.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/云盘资源.json"
         },
         {
             "key": "云盘资源分享",
@@ -298,7 +298,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/云盘资源分享.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/云盘资源分享.json"
         },
         {
             "key": "土拨鼠搜索",
@@ -308,7 +308,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/土拨鼠搜索.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/土拨鼠搜索.json"
         },
         {
             "key": "豆豆飞搜索",
@@ -318,7 +318,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/豆豆飞搜索.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/豆豆飞搜索.json"
         },
         {
             "key": "阿里云盘网",
@@ -328,7 +328,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/阿里云盘网.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/阿里云盘网.json"
         },
         {
             "key": "云盘分享社",
@@ -338,7 +338,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/云盘分享社.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/云盘分享社.json"
         },
         {
             "key": "Gitcafe",
@@ -368,7 +368,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/蚂蚁4K.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/蚂蚁4K.json"
         },
         {
             "key": "荐片",
@@ -405,8 +405,8 @@
             "key": "磁力熊",
             "name": "🧲磁力熊",
             "type": 3,
-            "api": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/磁力熊.js"
+            "api": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/js/drpy2.min.js",
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/磁力熊.js"
         },
         {
             "key": "美剧迷",
@@ -436,7 +436,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/极影网.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/极影网.json"
         },
         {
             "key": "电影港",
@@ -446,7 +446,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/电影港.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/电影港.json"
         },
         {
             "key": "BT天堂",
@@ -456,7 +456,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/BT天堂.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/BT天堂.json"
         },
         {
             "key": "80S影视",
@@ -485,7 +485,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/高清MP4.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/高清MP4.json"
         },
         {
             "key": "酷吧电影",
@@ -511,29 +511,29 @@
             "key": "腾讯",
             "name": "🐧腾讯视频",
             "type": 3,
-            "api": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/腾讯视频.js"
+            "api": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/js/drpy2.min.js",
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/腾讯视频.js"
         },
         {
             "key": "优酷",
             "name": "🆒优酷视频",
             "type": 3,
-            "api": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/优酷视频.js"
+            "api": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/js/drpy2.min.js",
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/优酷视频.js"
         },
         {
             "key": "爱奇艺",
             "name": "🥝爱奇艺",
             "type": 3,
-            "api": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/爱奇艺.js"
+            "api": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/js/drpy2.min.js",
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/爱奇艺.js"
         },
         {
             "key": "芒果",
             "name": "🍋芒果视频",
             "type": 3,
-            "api": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/芒果视频.js"
+            "api": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/js/drpy2.min.js",
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/芒果视频.js"
         },
         {
             "key": "csp_XYQHiker4klg",
@@ -543,17 +543,17 @@
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/中国蓝光网.json"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/中国蓝光网.json"
         },
         {
             "key": "js_4KHDR",
             "name": "👩‍⚕️玩偶姐姐",
             "type": 3,
-            "api": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/js/drpy2.min.js",
+            "api": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/js/drpy2.min.js",
             "searchable": 0,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://gh-proxy.com//https://github.com/anyangmvp/box/raw/main/repositories/rep/4KHDR.js"
+            "ext": "https://gh.aygogogo.eu.org/anyangmvp/box/main/repositories/rep/4KHDR.js"
         }
     ],
     "parses": [

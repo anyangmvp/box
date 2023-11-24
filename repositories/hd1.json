@@ -1,11 +1,11 @@
 {
     "spider": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/spider.jar;md5;761f41825820b4a64fd46787a03c0dd1",
-    "wallpaper": "https://jianbian.chuqiuyu.tk/",
+    "wallpaper": "https://api.likepoems.com/img/bing",
     "warningText": "💕最美好的祝福送给你，加油！💕",
     "lives": [
         {
             "name": "live1",
-            "url": "https://mirror.ghproxy.com//https://github.com/anyangmvp/box/raw/main/live/tv1",
+            "url": "https://gh.aygogogo.eu.org/anyangmvp/box/main/live/tv1",
             "type": 0,
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
             "logo": "https://epg.112114.xyz/logo/{name}.png",
@@ -60,7 +60,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://mirror.ghproxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/XYQHiker/农民影视.json"
+            "ext": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/rep/农民影视.json"
         },
         {
             "key": "csp_WoGG",
@@ -179,7 +179,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "jar": "https://mirror.ghproxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/jar/XYQ.jar"
+            "jar": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/rep/XYQ.jar;md5;3B3265737234FF17FC66539DD99EFC66"
         },
         {
             "key": "csp_KungFu404",
