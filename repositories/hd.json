@@ -5,7 +5,7 @@
     "lives": [
         {
             "name": "live1",
-            "url": "https://gh.aygogogo.eu.org/anyangmvp/box/main/live/tv1",
+            "url": "https://ghproxy.net/https://raw.githubusercontent.com/anyangmvp/box/main/live/tv1",
             "type": 0,
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
             "logo": "https://epg.112114.xyz/logo/{name}.png",
@@ -47,10 +47,11 @@
             "key": "三六零",
             "name": "🍊360影视",
             "type": 3,
-            "api": "csp_SP360",
+            "api": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/js/drpy2.min.js",
             "searchable": 1,
             "quickSearch": 1,
-            "filterable": 1
+            "filterable": 1,
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/360影视.js"
         },
         {
             "key": "csp_XYQHiker_农民影视",
@@ -60,7 +61,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/gaotianliuyun/gao/master/XYQHiker/农民影视.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/gaotianliuyun/gao/master/XYQHiker/农民影视.json"
         },
         {
             "key": "csp_WoGG",
@@ -70,7 +71,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/玩偶哥哥.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/玩偶哥哥.json"
         },
         {
             "key": "两个磁力",
@@ -80,7 +81,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/JS/两个磁力.js"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/JS/两个磁力.js"
         },
         {
             "key": "js_nangua",
@@ -90,7 +91,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/JS/畅梦影视.js"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/JS/畅梦影视.js"
         },
         {
             "key": "js_影探",
@@ -114,6 +115,16 @@
             "filterable": 1
         },
         {
+            "key": "js_LIBVIO",
+            "name": "🐇LIBVIO",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 1,
+            "api": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/js/drpy2.min.js",
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/LIBVIO.js"
+        },
+        {
             "key": "js_骚火电影",
             "name": "🔥骚火影视",
             "type": 3,
@@ -131,7 +142,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/奇趣影视.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/奇趣影视.json"
         },
         {
             "key": "ok",
@@ -142,23 +153,7 @@
             "filterable": 1,
             "api": "csp_XBPQ",
             "playerType": "1",
-            "ext": {
-                "分类url": "https://www.freeok.vip/vodshow/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html",
-                "分类": "最新热榜&今日更新&FREE电影&FREE剧集&FREE动漫&FREE综艺",
-                "分类值": "new&1&2&3&4&hot",
-                "嗅探词": "m3u8#.m3u8#.mp4#mp4",
-                "搜索url": "https://search.ymck.me/index.php?q={wd}",
-                "搜索数组": "<b>&&</b>[包含:Freeok]",
-                "搜索副标题": "<a>&&</a>",
-                "线路数组": "data-dropdown-value=&&</div>[不包含:夸克]",
-                "线路标题": "<span>&&</small>",
-                "搜索标题": "class='movie_name'>&&</a>",
-                "搜索链接": "href=\"&&\"",
-                "搜索图片": "http://xhww.fun:63/ss.jpg",
-                "导演": "导演：&&</div>",
-                "主演": "主演：&&</div>",
-                "简介": "<p>&&</p>"
-            }
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/FreeOK.jsd"
         },
         {
             "key": "达达龟",
@@ -169,7 +164,7 @@
             "quickSearch": 0,
             "filterable": 1,
             "playerType": "1",
-            "ext": "https://gh.aygogogo.eu.org/guot55/YGBH/main/h/dadagui.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/guot55/YGBH/main/h/dadagui.json"
         },
         {
             "key": "csp_Bdys",
@@ -197,7 +192,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/云盘搜索.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/云盘搜索.json"
         },
         {
             "key": "Upyunso",
@@ -237,7 +232,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/橘子盘搜.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/橘子盘搜.json"
         },
         {
             "key": "我的小站",
@@ -247,7 +242,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/我的小站.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/我的小站.json"
         },
         {
             "key": "阿里苏苏",
@@ -257,7 +252,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/阿里苏苏.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/阿里苏苏.json"
         },
         {
             "key": "云盘论坛",
@@ -267,7 +262,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/云盘论坛.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/云盘论坛.json"
         },
         {
             "key": "云盘资源",
@@ -277,7 +272,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/云盘资源.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/云盘资源.json"
         },
         {
             "key": "云盘资源分享",
@@ -287,7 +282,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/云盘资源分享.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/云盘资源分享.json"
         },
         {
             "key": "土拨鼠搜索",
@@ -297,7 +292,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/土拨鼠搜索.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/土拨鼠搜索.json"
         },
         {
             "key": "豆豆飞搜索",
@@ -307,7 +302,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/豆豆飞搜索.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/豆豆飞搜索.json"
         },
         {
             "key": "阿里云盘网",
@@ -317,7 +312,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/阿里云盘网.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/阿里云盘网.json"
         },
         {
             "key": "云盘分享社",
@@ -327,7 +322,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQBiu/云盘分享社.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQBiu/云盘分享社.json"
         },
         {
             "key": "Gitcafe",
@@ -347,7 +342,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/蚂蚁4K.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/蚂蚁4K.json"
         },
         {
             "key": "荐片",
@@ -384,7 +379,7 @@
             "name": "🧲磁力｜磁力熊",
             "type": 3,
             "api": "./JS/drpy.min.js",
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/JS/磁力熊.js"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/JS/磁力熊.js"
         },
         {
             "key": "美剧迷",
@@ -412,7 +407,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/极影网.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/极影网.json"
         },
         {
             "key": "电影港",
@@ -422,7 +417,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/电影港.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/电影港.json"
         },
         {
             "key": "BT天堂",
@@ -432,7 +427,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/BT天堂.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/BT天堂.json"
         },
         {
             "key": "Mp4电影",
@@ -451,7 +446,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/XYQHiker/高清MP4.json"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/XYQHiker/高清MP4.json"
         },
         {
             "key": "酷吧电影",
@@ -476,28 +471,28 @@
             "name": "🐧腾讯视频",
             "type": 3,
             "api": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/JS/腾讯视频.js"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/JS/腾讯视频.js"
         },
         {
             "key": "优酷",
             "name": "🆒优酷视频",
             "type": 3,
             "api": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/JS/优酷视频.js"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/JS/优酷视频.js"
         },
         {
             "key": "爱奇艺",
             "name": "🥝爱奇艺",
             "type": 3,
             "api": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/JS/爱奇艺.js"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/JS/爱奇艺.js"
         },
         {
             "key": "芒果",
             "name": "🍋芒果视频",
             "type": 3,
             "api": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/js/drpy2.min.js",
-            "ext": "https://gh.aygogogo.eu.org/PizazzGY/TVBox/main/JS/芒果视频.js"
+            "ext": "https://ghproxy.net/https://raw.githubusercontent.com/PizazzGY/TVBox/main/JS/芒果视频.js"
         },
         {
             "key": "csp_XYQHiker4klg",

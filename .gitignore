@@ -16,3 +16,4 @@ venv.bak/
 .vscode/
 cache/*
 .idea
+/repositories/spider.jar.cache
