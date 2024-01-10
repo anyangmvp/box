@@ -1,11 +1,11 @@
 {
-    "spider": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/spider.jar;md5;d1fa24b46f218f455bc3f4b948fd457e",
+    "spider": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/spider.jar;md5;a83a50484ea2d7a8aa6b37957a05a805",
     "wallpaper": "https://api.likepoems.com/img/bing",
     "warningText": "💕最美好的祝福送给你，加油！💕",
     "lives": [
         {
             "name": "live1",
-            "url": "https://mirror.ghproxy.com/raw.githubusercontent.com/anyangmvp/box/main/live/tv1",
+            "url": "https://ghproxy.net/https://raw.githubusercontent.com/anyangmvp/box/main/live/tv1",
             "type": 0,
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
             "logo": "https://epg.112114.xyz/logo/{name}.png",
@@ -62,6 +62,16 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/rep/玩偶哥哥.json"
+        },
+        {
+            "key": "农民影视",
+            "name": "🧑‍🌾农民影视",
+            "type": 3,
+            "api": "csp_XYQHiker",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/rep/农民影视.json"
         },
         {
             "key": "两个磁力",
@@ -152,6 +162,26 @@
             "searchable": 0,
             "filterable": 0,
             "jar": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/rep/alibaba.jar;md5;332D0E5A28640EE88589390AD4A23A39"
+        },
+        {
+            "key": "影视车",
+            "name": "📀云盘｜影视车",
+            "type": 3,
+            "api": "csp_XYQHikerAL",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/rep/影视车.json"
+        },
+        {
+            "key": "DOVX搜索",
+            "name": "📀云盘｜七夜",
+            "type": 3,
+            "api": "csp_XYQHiker",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": "https://jihulab.com/anyangmvp/box/-/raw/main/repositories/rep/DOVX搜索.json"
         },
         {
             "key": "云盘搜索",
